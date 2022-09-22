@@ -56,14 +56,14 @@ const renderCard = pokemon => {
 const emptyError = () => {
     card.innerHTML =`
     <div class="card-error">
-      <h1 class="error-msg">Por favor, ingrese un número.</h1>
+      <h2 class="error-msg">Por favor, ingrese un número.</h2>
     </div>`;
 };
 
 const idError = () => {
     card.innerHTML =`
     <div class="card-error">
-      <h1 class="error-msg">No existe un Pokemon con el ID seleccionado.</h1>
+      <h2 class="error-msg">No existe un Pokemon con el ID seleccionado.</h2>
       <p>Por favor, ingrese otro número.</p>
     </div>`;
 };
