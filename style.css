@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+:root {
+    --slizzling: #F2545B;
+    --amaranth: #A93F55;
+    --gunmetal: #19323c;
+    --cream: #F3F7F0;
+    --beau: #BFDBF7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    /* background-color: var(--slizzling); */
+    background: #fff url(./assets/Paleta.png) center center/cover no-repeat;
+    backdrop-filter: blur(5px);
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+    background-color: var(--cream);
+    padding: 15px;
+    border: 5px solid var(--gunmetal);
+}
+
+.card {
+    background-color: var(--cream);
+    width: 512px;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 10px solid var(--gunmetal);
+    background: linear-gradient(var(--slizzling) 50%, var(--cream) 50%);
+}
+
+.card-top {
+    display: block;
+    width: 100%;
+    height: 128px;
+    background-color: var(--slizzling);
+    /* border: solid green; */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: solid green; */
+    gap: 1rem;
+    border-bottom: 1px solid var(--gunmetal);
+    text-align: center;
+}
+
+.card-body img {
+    width: 256px;
+    height: 256px;
+    border: 5px solid var(--gunmetal);
+    border-radius: 50%;
+    margin-bottom: -128px auto;
+    background-color: var(--slizzling);
+}
+
+.card-body h2 {
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: capitalize;
+    /* border: solid green; */
+}
+
+.card-body p {
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+progress {
+    background: green;
+}
+
+.card-bot {
+    margin: 2rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-bot h3 {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.card-bot p {
+    font-size: 10px;
+}
+
+form {
+    max-width: 512px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: solid green; */
+}
+
+input::placeholder {
+    color: var(--slizzling);
+}
+
+.pokeSelector {
+    height: 100%;
+    width: 512px;
+    text-align: center;
+    font-weight: 700;
+    border: 5px solid var(--gunmetal);
+    border-radius: 1rem;
+    color: var(--slizzling);
+}
+
+.select-btn {
+    background-color: var(--cream);
+    height: 100%;
+    border: 5px solid var(--gunmetal);
+    border-radius: 1rem;
+    color: var(--slizzling);
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card-error {
+    border: 5px solid var(--gunmetal);
+    background-color: var(--cream);
+    padding: 1rem 1rem;
+    color: var(--slizzling);
+    /* text-shadow: 2px 2px var(--gunmetal); */
+    text-align: center;
+    line-height: 2rem;
+}
